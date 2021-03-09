@@ -26,12 +26,6 @@ vertex.configureApp(app, config)
 const main = require('./routes/main')
 app.use('/', main)
 
-// // import routes
-// const index = require('./routes/index')
-// const api = require('./routes/api') // sample API Routes
 
-// // set routes
-// app.use('/', index)
-// app.use('/api', api) // sample API Routes
 
 module.exports = app

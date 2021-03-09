@@ -4311,10 +4311,7 @@ input[type="button"].btn-block {
   to {
     background-position: 0 0; } }
 
-.fill{
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 .progress {
   display: -webkit-box;
   display: -ms-flexbox;

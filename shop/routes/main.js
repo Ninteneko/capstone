@@ -9,4 +9,8 @@ router.get('/', (req, res, next) =>{
     res.render('home', data)
 })
 
+router.get('/products', (req,res,next)=>{
+    res.render('products')
+})
+
 module.exports = router
