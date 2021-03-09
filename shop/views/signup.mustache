@@ -1,13 +1,21 @@
 <html>
     <head>
+        {{>head}}
         <title> Sign up </title>
         <link rel="stylesheet" href="sign.css">
     </head>
     
-    <body>
+    <body style="background:black">
+    {{>nav}}
         <div class="sign-up-form">
             <h1> Sign up </h1>
             <form>
                 <input type="email" class="input-box" placeholder="Email">
                 <input type="password" class="input-box" placeholder="Password">
             </form>
+        </div>
+
+    {{>footer}}
+    {{>scripts}}
+    </body>
+</html>

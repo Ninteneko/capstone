@@ -40,6 +40,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -166,7 +167,8 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;
+  border-radius: 0.5rem; }
 
 svg {
   overflow: hidden;
@@ -316,6 +318,36 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem; }
+
+
+
+img.medium{
+  max-width: 29rem;
+  width: 100%;
+}
+
+
+
+.card-position{
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.card{
+  border: 0.1rem grey;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.card-body{
+  padding: 1rem;
+}
+
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
 
 .lead {
   font-size: 1.25rem;
@@ -473,6 +505,18 @@ pre {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
+
+
+  .r0w{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .r0w.center{
+    justify-content: center;
+  }
 
 .no-gutters {
   margin-right: 0;

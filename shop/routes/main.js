@@ -13,4 +13,9 @@ router.get('/products', (req,res,next)=>{
     res.render('products')
 })
 
+
+router.get('/signup', (req,res,next)=>{
+    res.render('signup')
+})
+
 module.exports = router

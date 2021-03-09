@@ -1,14 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <html>
     <head>
+    
         {{>head}}
+        
         <title> Products </title>
     </head>
 
-    <body> 
-    
+    <body style="background:black"> 
+    {{>nav}}
+    <section class="card-position">
+        {{>card}}
+    </section>
+    {{>footer}}
+    {{>scripts}}
     </body>
 </html>
-
-
-{{>scripts}}
-<link rel="stylesheet" href="products.css">
