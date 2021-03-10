@@ -5,7 +5,23 @@
   </head>
   <body>
     
-	  {{>nav}}
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+            <p style ="color:white;"> Angel Quinteros <p>
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="/products" class="nav-link">Products</a></li>
+	        	<li class="nav-item"><a href="/signup" class="nav-link">Sign Up</a></li>
+				<li class="nav-item"><a href="#aboutAngel" class="nav-link">About</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
     <!-- END nav -->
     
     <section class="home-slider js-fullheight owl-carousel bg-black">
@@ -48,7 +64,7 @@
 		<section class="ftco-section ftco-wrap-about ftco-no-pb ftco-no-pt bg-black">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-sm-5 img img-2 d-flex " style="background-image: url(images/about.png); position: relative; opacity:0.4;"></div>
+					<div class="col-sm-5 img img-2 d-flex " id="aboutAngel" style="background-image: url(images/about.png); position: relative; opacity:0.4;"></div>
 					<div class="col-sm-7 wrap-about py-5 ftco-animate">
 	          <div class="heading-section mt-5 mb-4">
 	          	<div class="pl-lg-5 ml-md-5">
