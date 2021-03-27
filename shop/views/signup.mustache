@@ -5,29 +5,52 @@
     <link rel="stylesheet" href="sign.css" />
   </head>
 
-  <body class="taterbg" >
+  <body>
     {{>nav}}
-    <div class="pl-lg-5 ml-md-5 ftco-animate">
+    <section class="ftco-animate" style="background-color: black;">
+    <section class="home-slider js-fullheight owl-carousel bg-black">
 
-      <section class="tater">
-      <div class="login-box">
-        <h1>Login</h1>
-     
-          <div class="textbox">
-          <input type="email" class="input-box" placeholder="Email" />
-          </div>
-          <div class="textbox">
-          <input type="password" class="input-box" placeholder="Password" />
+   
+
+      <div class="slider-item js-fullheight">
+      	<div class="overlay"></div>
+        <div class="container-fluid p-0">
+          <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url(images/kod.png); opacity: 0.2;">
+          		<div class="overlay"></div>
+          	</div>
+	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+	          	<div class="text mt-md-5">
+		            
+	            </div>
+	          </div>
+        	</div>
         </div>
-        <input class="btn" type="button" name="" value=" Login">
-
       </div>
-
-      </div>
+      
     </section>
 
+    <div class="login-box">
+      <h1>Login</h1>
+   
+        <div class="textbox">
+        <input type="email" class="input-box" placeholder="Email" />
+        </div>
+        <div class="textbox">
+        <input type="password" class="input-box" placeholder="Password" />
+      </div>
+      <input class="btn" type="button" name="" value="Sign in" 
+        style="color: white; width: 100%; border: 2px solid white; padding: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">
+
     </div>
-    {{footer}}
+    </section>
+      
+
+
+ 
+
+  
+    {{>footer}}
     {{>scripts}}
   </body>
 </html>
