@@ -1,22 +1,33 @@
 <html>
-    <head>
-        {{>head}}
-        <title> Sign up </title>
-        <link rel="stylesheet" href="sign.css">
-    </head>
-    
-    <body style="background:black">
+  <head>
+    {{>head}}
+    <title>Sign up</title>
+    <link rel="stylesheet" href="sign.css" />
+  </head>
+
+  <body class="taterbg" >
     {{>nav}}
     <div class="pl-lg-5 ml-md-5 ftco-animate">
-        <div class="sign-up-form">
-            <h1> Sign up </h1>
-            <form>
-                <input type="email" class="input-box" placeholder="Email">
-                <input type="password" class="input-box" placeholder="Password">
-            </form>
+
+      <section class="tater">
+      <div class="login-box">
+        <h1>Login</h1>
+     
+          <div class="textbox">
+          <input type="email" class="input-box" placeholder="Email" />
+          </div>
+          <div class="textbox">
+          <input type="password" class="input-box" placeholder="Password" />
         </div>
+        <input class="btn" type="button" name="" value=" Login">
+
+      </div>
+
+      </div>
+    </section>
+
     </div>
-    {{>footer}}
+    {{footer}}
     {{>scripts}}
-    </body>
+  </body>
 </html>

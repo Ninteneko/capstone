@@ -326,6 +326,42 @@ img.medium{
   width: 100%;
 }
 
+.taterbg{
+  background:url(../images/graffiti.png);
+  
+}
+
+
+.tater{
+  margin 0;
+  padding: 0;
+  background:black;
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+
+.login-box h1{
+  float: left;
+  color: white;
+  font-size: 40px;
+  border-bottom: 6px solid white;
+  margin-bottom: 50px;
+  padding: 13px;
+}
+
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px;
+  border-bottom: 1px solid white;
+}
 
 
 .card-position{
