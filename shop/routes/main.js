@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+var Product = require('../models/product');
 
 router.get("/", (req, res, next) => {
   const data = {
@@ -11,6 +12,7 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/products", (reqn, res, next) => {
+  var products = Product.find();
   res.render("products");
 });
 
