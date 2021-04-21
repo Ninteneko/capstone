@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.12.5",
     "sqlite3": "^5.0.2",
     "turbo360": "^1.8.69",
     "vertex360": "^0.30.39"

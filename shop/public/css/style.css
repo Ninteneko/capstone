@@ -5168,6 +5168,19 @@ a.close.disabled {
 .carousel-control-prev {
   left: 0; }
 
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.thumbnail img{
+  max-height: 250px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .carousel-control-next {
   right: 0; }
 

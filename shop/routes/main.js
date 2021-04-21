@@ -10,7 +10,7 @@ router.get("/", (req, res, next) => {
   res.render("home", data);
 });
 
-router.get("/products", (req, res, next) => {
+router.get("/products", (reqn, res, next) => {
   res.render("products");
 });
 
