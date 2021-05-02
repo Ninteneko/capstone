@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>Posting</h1>
+
+    <form class="container" method="post" action="/admin">
+        <div class="form-group">
+            <input class="form-control" name="productImage">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="productTitle">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="productPrice">
+        </div>
+
+        <div class ="form-group">
+        <textarea class="form-control" name="productDescr"></textarea>
+        </div>
+
+        <button>add to database</button>
+    </form>
+</body>
+</html>
