@@ -9,7 +9,6 @@ router.use(express.urlencoded({extended: true}));
 var mongoose = require('mongoose');
 const { OPEN_READWRITE } = require("sqlite3");
 var Schema = mongoose.Schema;
-var Product = require('../models/product');
 
 mongoose.connect('mongodb+srv://yarelit:yarmen96@cluster0.zoiwt.mongodb.net/test', { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -21,7 +20,7 @@ var schema = new Schema({
 });
 
 
-const Note = mongoose.model("Note", schema);
+const Product = mongoose.model("Product", schema);
 
 router.get("/", (req, res, next) => {
   const data = {
@@ -38,7 +37,8 @@ router.get("/products", (req, res, next) => {
 });
 
 router.get("/signup", (req, res, next) => {
-  res.render("signup");
+  res.render("signup", {username: 'admin', password: '1234'});
+  
 });
 
 module.exports = router;
@@ -49,14 +49,14 @@ router.get("/admin", function(req, res){
 
 router.post("/admin", function(req, res){
 console.log(req.body)
-  let newNote = new Note({
+  let newNote = new Product({
     imagePath: req.body.productImage,
     title: req.body.productTitle,
     description: req.body.productDescr,
     price: req.body.productPrice
   })
 
-  console.log(newNote)
   newNote.save();
+  res.redirect("/admin")
 })
 

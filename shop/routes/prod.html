@@ -8,27 +8,29 @@
 
 </head>
 
-<body>
-    <h1>Posting</h1>
+<body style="background-color: black; " class="ftco-animate">
+    <h1 style="text-align: center; color: white; padding-top: 100px; font-family: 'Courier New', Courier, monospace;">Add Product to Database</h1>
 
-    <form class="container" method="post" action="/admin">
+    <form class="container" method="post" action="/admin" style="text-align: center;">
         <div class="form-group">
-            <input class="form-control" name="productImage">
+            <input class="form-control" name="productImage" placeholder="product URL" > 
         </div>
 
         <div class="form-group">
-            <input class="form-control" name="productTitle">
+            <input class="form-control" name="productTitle" placeholder="product title">
         </div>
 
         <div class="form-group">
-            <input class="form-control" name="productPrice">
+            <input class="form-control" name="productPrice" placeholder="product price">
         </div>
 
         <div class ="form-group">
-        <textarea class="form-control" name="productDescr"></textarea>
+        <textarea class="form-control" name="productDescr" placeholder="product description"></textarea>
         </div>
 
         <button>add to database</button>
+        <input type=button onClick="location.href='../'"
+ value='logout'>
     </form>
 </body>
 </html>
