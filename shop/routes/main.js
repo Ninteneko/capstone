@@ -33,8 +33,11 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/products", (req, res, next) => {
-  var stuff = Product.find();
-  res.render("products")
+    Note.find(function(err, docs){
+
+      console.log(docs)
+      res.render("products",{ products: docs});
+    });
 });
 
 router.get("/signup", (req, res, next) => {
@@ -48,7 +51,6 @@ router.get("/admin", function(req, res){
 })
 
 router.post("/admin", function(req, res){
-console.log(req.body)
   let newNote = new Note({
     imagePath: req.body.productImage,
     title: req.body.productTitle,
@@ -56,7 +58,6 @@ console.log(req.body)
     price: req.body.productPrice
   })
 
-  console.log(newNote)
   newNote.save();
-})
+ })
 
