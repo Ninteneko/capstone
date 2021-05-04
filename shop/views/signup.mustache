@@ -1,3 +1,6 @@
+
+
+
 <html>
   <head>
     {{>head}}
@@ -30,20 +33,24 @@
       
     </section>
 
-    <div class="login-box">
+    <form class="login-box" method="post" action="/signin">
       <h1>Login</h1>
    
         <div class="textbox">
-        <input type="email" class="input-box" placeholder="Email" />
+        <input type="email" class="input-box" placeholder="Username" name="user" />
         </div>
         <div class="textbox">
-        <input type="password" class="input-box" placeholder="Password" />
+        <input type="password" class="input-box" placeholder="Password" name = "pw" />
       </div>
+<<<<<<< HEAD
       <input class="btn" type="button" name="" value="Sign in" 
+=======
+      <input class="btn" type="button" name="in" value="Sign in"
+>>>>>>> 59a1ad5bb0ab3161af15367001d110db1000418c
         style="color: white; width: 100%; border: 2px solid white; padding: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "
         onclick="location.href='../admin'">
 
-    </div>
+    </form>
     </section>
       
 
